@@ -1,0 +1,40 @@
+
+version: "3.8"
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server
+    container_name: mssql
+    ports:
+      - 1433:1433
+    volumes:
+      - mssqldata:/var/lib/mssqlql/data
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=passWORD!
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pwd
+    ports:
+      - 27017:27017
+    volumes: 
+      - mongodbdata:/data/db
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - rabbitmqdata:/var/lib/rabbitmq
+    hostname: rabbitmq
+
+volumes:
+  mssqldata: 
+  mongodbdata:
+  rabbitmqdata:
