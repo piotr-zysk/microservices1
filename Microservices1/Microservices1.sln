@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api1", "Api1\Api1.csproj", "{139EA0BB-EA13-40DA-9ED9-2F6393DA55B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FC7F5B0E-8C48-444B-A85E-B41FDCA1D2FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlDataAccess", "SqlDataAccess\SqlDataAccess.csproj", "{6F811F96-E52C-446F-9279-1618AD7FCE57}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2E4FEA9D-585D-463F-9DDD-7151BCC4BAE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{139EA0BB-EA13-40DA-9ED9-2F6393DA55B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{139EA0BB-EA13-40DA-9ED9-2F6393DA55B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{139EA0BB-EA13-40DA-9ED9-2F6393DA55B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{139EA0BB-EA13-40DA-9ED9-2F6393DA55B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F811F96-E52C-446F-9279-1618AD7FCE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F811F96-E52C-446F-9279-1618AD7FCE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F811F96-E52C-446F-9279-1618AD7FCE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F811F96-E52C-446F-9279-1618AD7FCE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4FEA9D-585D-463F-9DDD-7151BCC4BAE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4FEA9D-585D-463F-9DDD-7151BCC4BAE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4FEA9D-585D-463F-9DDD-7151BCC4BAE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4FEA9D-585D-463F-9DDD-7151BCC4BAE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F811F96-E52C-446F-9279-1618AD7FCE57} = {FC7F5B0E-8C48-444B-A85E-B41FDCA1D2FB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48C0797B-919F-40A4-8D6E-D9DD2E012FED}
+	EndGlobalSection
+EndGlobal

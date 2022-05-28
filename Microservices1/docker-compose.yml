@@ -1,5 +1,4 @@
-
-version: "3.8"
+version: '3.8'
 
 services:
   mssql:
@@ -33,6 +32,16 @@ services:
     volumes:
       - rabbitmqdata:/var/lib/rabbitmq
     hostname: rabbitmq
+
+  api1:
+    image: ${DOCKER_REGISTRY-}api1
+    build:
+      context: .
+      dockerfile: Api1/Dockerfile
+    ports:
+      - 8443:443
+    depends_on: ["mssql"]
+    container_name: api1
 
 volumes:
   mssqldata: 

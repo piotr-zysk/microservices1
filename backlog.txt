@@ -1,0 +1,10 @@
+Issues:
+
+Why docker-compose works within vs, but not from console outside vs.
+Why port is assigned randomly, regardless of config.
+
+
+AP:
+Install EF, entity
+Add MongoDb dataAccess and webapi
+Add MassTransit/RabbitMQ for data replication

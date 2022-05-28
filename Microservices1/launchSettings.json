@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "api1",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "api1": "StartDebugging",
+        "mongo": "StartWithoutDebugging",
+        "mssql": "StartWithoutDebugging",
+        "rabbitmq": "DoNotStart"
+      }
+    }
+  }
+}
