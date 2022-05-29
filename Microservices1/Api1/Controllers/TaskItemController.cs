@@ -16,7 +16,7 @@ namespace Api1.Controllers
             this.taskItemService = taskItemService;
         }
 
-        [HttpGet]
+        [HttpGet("GetAll")]
         public async Task<ActionResult<TaskItem>> GetAll()
         {
             var taskItems = await taskItemService.GetAll();

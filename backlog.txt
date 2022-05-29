@@ -5,6 +5,18 @@ Why port is assigned randomly, regardless of config.
 
 
 AP:
-Install EF, entity
+Switch docker/docker-compose config to run it from console istead of VS
+https://stackoverflow.com/questions/47103570/asp-net-core-2-0-multiple-projects-solution-docker-file
+
+Microservices1>docker build -f Api1/Dockerfile -t api1image .
+Microservices1>docker run -d -p 8443:443 --name test api1image
+
+Zdiagnozuj dlaczego przeglądarka nie znajduje strony po odpaleniu kontenera w powyższy sposób
+
+https://localhost:8443/swagger/index.html
+
+
+
+
 Add MongoDb dataAccess and webapi
 Add MassTransit/RabbitMQ for data replication

@@ -7,7 +7,7 @@ services:
     ports:
       - 1433:1433
     volumes:
-      - mssqldata:/var/lib/mssqlql/data
+      - mssqldata:/var/lib/mssql/data
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=passWORD!
@@ -40,6 +40,7 @@ services:
       dockerfile: Api1/Dockerfile
     ports:
       - 8443:443
+      - 8081:80
     depends_on: ["mssql"]
     container_name: api1
 
