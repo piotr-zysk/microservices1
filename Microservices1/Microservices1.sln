@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api1", "Api1\Api1.csproj", "{139EA0BB-EA13-40DA-9ED9-2F6393DA55B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F811F96-E52C-446F-9279-1618AD7FCE57} = {6F811F96-E52C-446F-9279-1618AD7FCE57}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FC7F5B0E-8C48-444B-A85E-B41FDCA1D2FB}"
 EndProject
